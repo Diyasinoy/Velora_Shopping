@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #f8d7da; /* mild red */
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h2,
+.navbar-brand h4 {
+  display: inline-block;
+  margin: 0;
+  padding-left: 10px;
+  color: #721c24; /* deep red for text */
+  vertical-align: middle;
+}
+
+.navbar-brand h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-brand h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #a94442; /* soft red */
+}
+
+.nav-link {
+  color: #721c24 !important; /* red links */
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a94442 !important; /* hover darker */
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  border-color: #721c24;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(114, 28, 36, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

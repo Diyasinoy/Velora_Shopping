@@ -1,0 +1,204 @@
+.hero {
+  position: relative;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-image: url('https://assets.epicurious.com/photos/57b208990e4be0011c1bf088/master/pass/mango-cheesecake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Optional: soft dark overlay to improve text readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity here */
+  z-index: 0;
+}
+
+/* Style your hero text */
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  background: linear-gradient(to right, #fff0f0, #ffe6e6); /* soft pink/red background */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Limit the carousel size */
+.carousel {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Carousel images */
+.carousel-inner img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover; /* Makes images uniform */
+  border-radius: 8px;
+}
+
+/* Indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: #721c24; /* dark red */
+}
+
+/* Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #721c24; /* dark red */
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Wrapper around the carousel with a soft red background */
+.carousel-wrapper {
+  background: linear-gradient(to right, #ffe5e5, #fff0f0); /* mild red gradient */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main carousel container */
+.carousel {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* Images inside the carousel */
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 98vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
+.carousel-caption.custom-caption h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-caption.custom-caption p {
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  white-space: normal;  /* allow wrapping for tagline */
+  overflow: visible;
+  text-overflow: unset;
+  margin: 0;
+}
+
+
+.hero {
+  position: relative;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-image: url('https://assets.epicurious.com/photos/57b208990e4be0011c1bf088/master/pass/mango-cheesecake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  animation: slideX 6s ease-in-out infinite alternate;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 5px 0;
+  position: relative;
+  z-index: 1;
+  animation: slideX 8s ease-in-out infinite alternate;
+}
+
+/* Animate horizontal slide left-right */
+@keyframes slideX {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
