@@ -9,4 +9,16 @@ import { RouterLink } from '@angular/router';
 })
 export class Services {
 
+ activePanel: string | null = null;
+
+togglePanel(panelId: string) {
+  if (this.activePanel === panelId) {
+    this.activePanel = null;
+  } else {
+    this.activePanel = panelId;
+  }
+}
+  getPanelClass(panelId: string): string {
+    return this.activePanel === panelId ? 'panel active' : 'panel';
+  }
 }

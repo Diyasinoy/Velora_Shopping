@@ -1,9 +1,9 @@
 footer {
-  background-color: #f8d7da; /* mild red/pinkish shade */
-  color: #721c24; /* darker red for text */
+  background-color: #2c0058; /* Dark violet */
+  color: #ffffff; /* White text */
   text-align: center;
   padding: 15px 0;
   font-size: 1rem;
   font-weight: 500;
-  border-top: 2px solid #f5c6cb;
+  border-top: 2px solid #f5f2fa;
 }
